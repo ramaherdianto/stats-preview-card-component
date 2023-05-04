@@ -68,7 +68,8 @@ body {
 }
 
 .text-stats__inner span {
-    font-size: 10px;
+    font-size: 8px;
+    letter-spacing: 1px;
     color: hsla(0, 0%, 100%, 0.6);
     text-transform: uppercase;
 }
@@ -149,7 +150,8 @@ body {
     }
 
     .text-stats__inner span {
-        font-size: 13px;
+        font-size: 11px;
+        letter-spacing: 2px;
     }
 
     .image-container {
