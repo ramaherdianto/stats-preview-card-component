@@ -22,6 +22,7 @@ body {
     flex-direction: column-reverse;
     justify-content: center;
     width: 300px;
+    border-radius: 8px;
 }
 
 .text-container {
@@ -84,14 +85,15 @@ body {
     width: 100%;
     height: 100%;
     background-color: hsl(277, 80%, 40%, 0.7);
+    border-radius: 8px 8px 0 0;
 }
 
 .image-container img {
     object-fit: cover;
     object-position: center;
     width: 100%;
-    /* height: 100%; */
     display: block;
+    border-radius: 8px 8px 0 0;
 }
 
 @media (min-width: 1024px) {
@@ -105,6 +107,7 @@ body {
         align-items: center;
         width: 100%;
         max-width: 1200px;
+        border-radius: 10px;
     }
 
     .text-container {
@@ -154,11 +157,16 @@ body {
         flex-basis: 60%;
     }
 
+    .image-container::after {
+        border-radius: 0 10px 10px 0;
+    }
+
     .image-container img {
         object-fit: cover;
         object-position: center;
         width: 100%;
         height: 100%;
         display: block;
+        border-radius: 0 10px 10px 0;
     }
 }
